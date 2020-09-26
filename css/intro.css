@@ -1,0 +1,143 @@
+/* Google Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+canvas {
+    border: 1px soild transparent;
+}
+
+h1 {
+    display: inline-block;
+    padding: .3em;
+    font-family: 'Megrim', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    user-select: none;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, .68);
+    border: .075em solid rgba(255, 255, 255, .1);
+}
+
+
+/* Global */
+
+html {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: #7ed955;
+    font-family: 'Anonymous Pro', monospace;
+    background-color: #0C091D;
+}
+
+#p1,
+#p2,
+#p3 {
+    position: absolute;
+    left: 40%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+#p1 {
+    top: 30%;
+}
+
+#p2 {
+    top: 40%;
+}
+
+#p3 {
+    top: 50%;
+}
+
+
+/* Animation */
+
+.anim-typewriter {
+    animation: typewriter 40s steps(18) 1s 1 normal both, blinkTextCursor 500ms steps(18) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 9.8em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@media (max-width: 2560px) {
+    #p1,
+    #p2,
+    #p3 {
+        left: 50%;
+    }
+}
+
+@media (max-width: 1440px) {
+    #p1,
+    #p2,
+    #p3 {
+        left: 40%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #p1,
+    #p2,
+    #p3 {
+        left: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    #p1,
+    #p2,
+    #p3 {
+        left: 35%;
+    }
+}
+
+@media (max-width: 425px) {
+    #p1,
+    #p2,
+    #p3 {
+        left: 28%;
+    }
+}
+
+@media (max-width: 375px) {
+    #p1,
+    #p2,
+    #p3 {
+        left: 20%;
+    }
+}
+
+@media (max-width: 320px) {
+    #p1,
+    #p2,
+    #p3 {
+        left: 10%;
+    }
+}
